@@ -1,0 +1,32 @@
+<head>
+  <title>Routing</title>
+</head>
+
+<body>
+  {{> navigation}}
+  {{renderPage}}
+</body>
+
+<template name="navigation">
+  <ul>
+    <li><a href="{{homeUrl}}">Home</a>
+    <li><a href="{{aboutPath}}">About</a>
+    <li><a href="{{contactPath}}">Contact</a>
+  </ul>
+</template>
+
+<template name="home">
+  <h1>Home</h1>
+  <p>This is the home page. Our users will land here when they visit the app for the first time. Nice!</p>
+</template>
+
+<template name="about">
+  <h1>About</h1>
+  <p>Routing is a simple app to show off routing in Meteor. It uses the <a href="https://github.com/tmeasday/meteor-router">Router</a> package written by Tom Coleman. Millions are just around the corner :)</p>
+</template>
+
+<template name="contact">
+  <h1>Contact</h1>
+  <p>Need to interview us for your blog about our sweet app? Email us at: <a href="mailto:haha@fakeapp.com">haha@fakeapp.com</a>.</p>
+</template>
+
